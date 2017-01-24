@@ -1,0 +1,34 @@
+.counter {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 100px;
+
+  outline: 1px dotted hotpink;
+  overflow: hidden;
+}
+
+.counter > div {
+  height: 1em;
+  width: 1em;
+
+  transform-style: preserve-3d;
+  transform: translateZ(-2em) rotateX(0deg);
+
+  transition: transform 1s ease-in-out;
+}
+
+.counter span {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.counter span:nth-child(1)  { transform: rotateX(0deg)   translateZ(2em); }
+.counter span:nth-child(2)  { transform: rotateX(36deg)  translateZ(2em); }
+.counter span:nth-child(3)  { transform: rotateX(72deg)  translateZ(2em); }
+.counter span:nth-child(4)  { transform: rotateX(108deg) translateZ(2em); }
+.counter span:nth-child(5)  { transform: rotateX(144deg) translateZ(2em); }
+.counter span:nth-child(6)  { transform: rotateX(180deg) translateZ(2em); }
+.counter span:nth-child(7)  { transform: rotateX(216deg) translateZ(2em); }
+.counter span:nth-child(8)  { transform: rotateX(252deg) translateZ(2em); }
+.counter span:nth-child(9)  { transform: rotateX(288deg) translateZ(2em); }
+.counter span:nth-child(10) { transform: rotateX(324deg) translateZ(2em); }

@@ -20,6 +20,10 @@
 .counter span {
   position: absolute;
   backface-visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .counter span:nth-child(1)  { transform: rotateX(0deg)   translateZ(2em); }
